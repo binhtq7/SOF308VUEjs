@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fail if unexpected top-level folders exist
         run: |
-          # Danh sách thư mục được phép (bạn có thể thêm Slide6..8, GD1..2 nếu cần)
+          # Danh sách thư mục được phép (có thể thêm nếu cần)
           allowed=("GD1" "GD2" "Lab1" "Lab2" "Lab3" "Lab4" "Lab5" "Lab6" "Lab7" "Lab8" \
                    "Slide1" "Slide2" "Slide3" "Slide4" "Slide5" "Slide6" "Slide7" "Slide8" ".github")
 
@@ -32,4 +32,5 @@ jobs:
           else
             echo "✅ Cấu trúc thư mục hợp lệ."
           fi
+
 
